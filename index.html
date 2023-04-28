@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Mentor | Age calculator app</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="main">
+                <div class="form-box">
+                    <div class="form form-1">
+                        <h3 id="title-d">DAY</h3>
+                        <input type="number" id="input-d">
+                        <div class="invalid" id="invalid-d">
+                            <p><i>Invalid Input</i></p>
+                        </div>
+                    </div>
+                    <div class="form form-2">
+                        <h3 id="title-m">MONTH</h3>
+                        <input type="number" id="input-m">
+                        <div class="invalid" id="invalid-m">
+                            <p><i>Invalid Input</i></p>
+                        </div>
+                    </div>
+                    <div class="form form-3">
+                        <h3 id="title-y">YEAR</h3>
+                        <input type="number" id="input-y">
+                        <div class="invalid" id="invalid-y">
+                            <p><i>Invalid Input</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator">
+                    <button type="button" id="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+                    </button>
+                </div>
+                <div class="output-box">
+                    <h1><i><span id="output-y">--</span> years</i></h1>
+                    <h1><i><span id="output-m">--</span> months</i></h1>
+                    <h1><i><span id="output-d">--</span> days</i></h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
